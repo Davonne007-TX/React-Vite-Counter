@@ -25,8 +25,7 @@ function App() {    //theres a function, which is a function component, can be w
       <span>{donuts}</span>
       <button onClick={incrementCount}>+</button>  
     </div>
-      
-        
+    
     </>  //To make the buttons functional (functionality), need to import the useState hook we are going to use, this is line 1, import hook from react, then lines 6 and 7
       ) //last curly of the return
 } //last curly of the function 
@@ -63,6 +62,6 @@ export default App
     //in this case adding the text "More Donuts", "Less Donuts"
 
 
-    
+
 
 
