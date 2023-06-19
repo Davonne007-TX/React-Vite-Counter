@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import './index.css';
 
 
-
-
 function App() {    //theres a function, which is a function component, can be whatever you want, header, main, nav, anything
     const [count, setCount] = useState(0);  //give it its state, useState give us two values, see notes
     const [donuts, setDonuts] = useState("Donuts");
