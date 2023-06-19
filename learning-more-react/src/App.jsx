@@ -6,7 +6,7 @@ function App() {    //theres a function, which is a function component, can be w
     const [count, setCount] = useState(0);  //give it its state, useState give us two values, see notes
     const [donuts, setDonuts] = useState("Donuts");
 
-
+›
     function  decrementCount() {
       setCount(previousCount => previousCount - 1);  // we are calling setCount and setting it to another function previousCount minus 1
       setDonuts("Less Donut") 
