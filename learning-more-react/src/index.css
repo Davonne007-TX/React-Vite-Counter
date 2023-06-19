@@ -32,3 +32,18 @@ span {
   padding: 10px;
   font-family: 'Pacifico', cursive;
 }
+
+
+/*images*/
+#yummyDonuts {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 10%;
+}
+
+

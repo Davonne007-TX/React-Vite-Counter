@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './index.css';
 
 
+
+
 function App() {    //theres a function, which is a function component, can be whatever you want, header, main, nav, anything
     const [count, setCount] = useState(0);  //give it its state, useState give us two values, see notes
     const [donuts, setDonuts] = useState("Donuts");
@@ -25,7 +27,9 @@ function App() {    //theres a function, which is a function component, can be w
       <span>{donuts}</span>
       <button onClick={incrementCount}>+</button>  
     </div>
-    
+
+    <img src="./images/donuts.jpg" alt="donuts" id="yummyDonuts"></img>
+
     </>  //To make the buttons functional (functionality), need to import the useState hook we are going to use, this is line 1, import hook from react, then lines 6 and 7
       ) //last curly of the return
 } //last curly of the function 
