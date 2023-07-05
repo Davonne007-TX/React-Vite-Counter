@@ -5,23 +5,31 @@ function App() {    //theres a function, which is a function component, can be w
     const [count, setCount] = useState(0);  //give it its state, useState give us two values, see notes
     const [donuts, setDonuts] = useState("Donuts");
 
-    function  decrementCount() {
-      setCount(previousCount => previousCount - 1);  // we are calling setCount and setting it to another function previousCount minus 1
-      setDonuts("Less Donut") 
+    function decrementCount() {
+      setCount(previousCount => {
+        console.log("Count:", previousCount);
+        return previousCount - 1;
+      });
+      setDonuts("Less Donut");
     }
+  
+    function incrementCount() {
+      setCount(previousCount => {
+        console.log("Count:", previousCount);
+        return previousCount + 1;
+      });
 
-    function incrementCount () {
-      setCount(previousCount => previousCount + 1);  //again calling setCount, we are setting it to the previousCount function to increment the count plus 1
       setDonuts("More Donut");
     }
-
+  
   return (  
     <>
     <div id="container">
       <button onClick={decrementCount}>-</button>
       <span>{count}</span>  
       <span>{donuts}</span>
-      <button onClick={incrementCount}>+</button>  
+      <button onClick={incrementCount}>+</button> 
+   
     </div>
 
     <img src="./images/donuts.jpg" alt="donuts" id="yummyDonuts"></img>
