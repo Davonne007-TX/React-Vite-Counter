@@ -69,6 +69,9 @@ export default App
     //makes things easier if you have more states, doing a certain thing 
     //in this case adding the text "More Donuts", "Less Donuts"
 
+  // You can put anything in the state. Can put anything in the state, object, empty object, etc 
+
+
 
 
 
